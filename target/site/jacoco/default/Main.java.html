@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Minesweeper1</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">import java.util.*;
+import java.util.Random;
+import java.util.HashSet;
+import java.util.Set;
+
+
+
+<span class="nc" id="L8">public class Main {</span>
+
+    public static void main(String[] args) {
+
+
+<span class="nc" id="L13">        int rows = 10;</span>
+<span class="nc" id="L14">        int cols = 10;</span>
+<span class="nc" id="L15">        Cell[][] grid = new Cell[rows][cols];</span>
+<span class="nc" id="L16">        int value = 1;</span>
+<span class="nc bnc" id="L17" title="All 2 branches missed.">        for (int i = 0; i &lt; rows; i++) {</span>
+<span class="nc bnc" id="L18" title="All 2 branches missed.">            for (int j = 0; j &lt; cols; j++) {</span>
+<span class="nc" id="L19">                grid[i][j] = new Cell(i, j);</span>
+<span class="nc" id="L20">                value++;</span>
+<span class="nc" id="L21">                System.out.print(grid[i][j] + &quot; &quot;);</span>
+            }
+<span class="nc" id="L23">            System.out.println();</span>
+        }
+<span class="nc" id="L25">        Cell[][] originalgrid = Arrays.copyOf(grid, grid.length);</span>
+
+<span class="nc" id="L27">        Random randomgen = new Random();</span>
+<span class="nc" id="L28">        Set&lt;Cell&gt; selectedItems = new HashSet&lt;&gt;();</span>
+
+<span class="nc bnc" id="L30" title="All 2 branches missed.">        while (selectedItems.size() &lt; 10) {</span>
+
+<span class="nc" id="L32">            int randomRow = randomgen.nextInt(rows);</span>
+<span class="nc" id="L33">            int randomCol = randomgen.nextInt(cols);</span>
+<span class="nc" id="L34">            Cell selectedItem = grid[randomRow][randomCol];</span>
+<span class="nc" id="L35">            selectedItems.add(selectedItem);</span>
+<span class="nc" id="L36">        }</span>
+<span class="nc" id="L37">        System.out.println(&quot;Randomly selected items:&quot;);</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        for (Cell item : selectedItems) {</span>
+<span class="nc" id="L39">        }</span>
+<span class="nc" id="L40">        Cell[] selecteditemsarray = selectedItems.toArray(new Cell[selectedItems.size()]);</span>
+
+<span class="nc bnc" id="L42" title="All 2 branches missed.">        for (Cell item : selecteditemsarray) {</span>
+<span class="nc bnc" id="L43" title="All 2 branches missed.">            for (int i1 = 0; i1 &lt; rows; i1++) {</span>
+<span class="nc bnc" id="L44" title="All 2 branches missed.">                for (int j1 = 0; j1 &lt; cols; j1++) {</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">                    if (item == grid[i1][j1]) {</span>
+<span class="nc" id="L46">                        grid[i1][j1].plantbomb();</span>
+                    }
+                }
+
+            }
+        }
+
+<span class="nc" id="L53">        int rows1 = 10;</span>
+<span class="nc" id="L54">        int cols1 = 10;</span>
+<span class="nc" id="L55">        String[][] guesses = new String[rows1][cols1];</span>
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        for (int i = 0; i&lt;rows1; i++) {</span>
+<span class="nc bnc" id="L57" title="All 2 branches missed.">            for (int j=0; j&lt;cols1; j++) {</span>
+<span class="nc" id="L58">                System.out.print(guesses[i][j] + &quot; &quot;);</span>
+            }
+<span class="nc" id="L60">            System.out.println();</span>
+        }
+<span class="nc bnc" id="L62" title="All 2 branches missed.">        for (Cell[] item : grid) {</span>
+<span class="nc bnc" id="L63" title="All 2 branches missed.">            for (int i1 = 0; i1 &lt; rows; i1++) {</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">                for (int j1 = 0; j1 &lt; cols; j1++) {</span>
+<span class="nc" id="L65">                    Scanner scanner = new Scanner(System.in);</span>
+<span class="nc" id="L66">                    System.out.print(&quot;Enter your x coordinate &quot;);</span>
+<span class="nc" id="L67">                    int xcoord = scanner.nextInt();</span>
+<span class="nc bnc" id="L68" title="All 4 branches missed.">                    while (xcoord &lt; 0 || xcoord &gt; 10) {</span>
+<span class="nc" id="L69">                        System.out.print(&quot;That's not possible, try again &quot;);</span>
+<span class="nc" id="L70">                        xcoord = scanner.nextInt();</span>
+                    }
+<span class="nc" id="L72">                    Scanner scanner1 = new Scanner(System.in);</span>
+
+<span class="nc" id="L74">                    System.out.print(&quot;Enter your y coordinate &quot;);</span>
+
+<span class="nc" id="L76">                    int ycoord = scanner1.nextInt();</span>
+<span class="nc bnc" id="L77" title="All 4 branches missed.">                    while (ycoord &lt; 0 || ycoord &gt; 10) {</span>
+<span class="nc" id="L78">                        System.out.println(&quot;That's not possible try again&quot;);</span>
+<span class="nc" id="L79">                        ycoord = scanner1.nextInt();</span>
+<span class="nc" id="L80">                        grid[xcoord][ycoord].checkbomb();</span>
+
+
+                    }
+
+<span class="nc" id="L85">                    String guess = (&quot;(&quot; + xcoord + &quot;,&quot; + ycoord + &quot;)&quot;);</span>
+<span class="nc" id="L86">                    guesses[xcoord][ycoord] = guess;</span>
+
+<span class="nc bnc" id="L88" title="All 2 branches missed.">                    for (int row = 0; row &lt; guesses.length; row++) {</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">                        for (int col = 0; col &lt; guesses[row].length; col++) {</span>
+<span class="nc" id="L90">                            System.out.print(guesses[row][col]);</span>
+                        }
+<span class="nc" id="L92">                        System.out.println();</span>
+                    }
+<span class="nc" id="L94">                    grid[xcoord][ycoord].checkbomb();</span>
+
+<span class="nc bnc" id="L96" title="All 4 branches missed.">                    for (int i2 = xcoord; xcoord - 1 &lt; i2 &amp;&amp; i2 &lt; xcoord + 1; i2++) {</span>
+<span class="nc bnc" id="L97" title="All 4 branches missed.">                        for (int j2 = ycoord; ycoord - 1 &lt; j2 &amp;&amp; j2 &lt; ycoord + 1; j2++) {</span>
+<span class="nc" id="L98">                            grid[i2][j2].searchbomb();</span>
+                        }
+
+                    }
+                }
+            }
+
+        }
+<span class="nc" id="L106">    }</span>
+
+
+
+}
+
+
+
+
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
