@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MainTest" time="0.508" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MainTest" time="0.388" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\USER\AppData\Local\Temp\surefire6022100256047895709\surefirebooter-20240304171758810_3.jar C:\Users\USER\AppData\Local\Temp\surefire6022100256047895709 2024-03-04T17-17-58_500-jvmRun1 surefire-20240304171758810_1tmp surefire_0-20240304171758810_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\USER\AppData\Local\Temp\surefire1448171281579968327\surefirebooter-20240305092332484_3.jar C:\Users\USER\AppData\Local\Temp\surefire1448171281579968327 2024-03-05T09-23-31_957-jvmRun1 surefire-20240305092332484_1tmp surefire_0-20240305092332484_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\USER\IdeaProjects\Minesweeper1\target\test-classes;C:\Users\USER\IdeaProjects\Minesweeper1\target\classes;C:\Users\USER\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\USER\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\USER\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\USER\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\USER\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\USER\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\USER\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\USER\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\USER\.m2\repository\org\jacoco\jacoco-maven-plugin\0.8.11\jacoco-maven-plugin-0.8.11.jar;C:\Users\USER\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\USER\.m2\repository\org\apache\maven\shared\file-management\3.1.0\file-management-3.1.0.jar;C:\Users\USER\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\USER\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\USER\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0\doxia-sink-api-1.0.jar;C:\Users\USER\.m2\repository\org\jacoco\org.jacoco.agent\0.8.11\org.jacoco.agent-0.8.11-runtime.jar;C:\Users\USER\.m2\repository\org\jacoco\org.jacoco.core\0.8.11\org.jacoco.core-0.8.11.jar;C:\Users\USER\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\USER\.m2\repository\org\ow2\asm\asm-commons\9.6\asm-commons-9.6.jar;C:\Users\USER\.m2\repository\org\ow2\asm\asm-tree\9.6\asm-tree-9.6.jar;C:\Users\USER\.m2\repository\org\jacoco\org.jacoco.report\0.8.11\org.jacoco.report-0.8.11.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\USER\AppData\Local\Temp\surefire6022100256047895709\surefirebooter-20240304171758810_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\USER\AppData\Local\Temp\surefire1448171281579968327\surefirebooter-20240305092332484_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -58,5 +58,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Createsa10by10Arraylist" classname="MainTest" time="0.427"/>
+  <testcase name="Createsa10by10Arraylist" classname="MainTest" time="0.315">
+    <system-out><![CDATA[Cell@7331196b Cell@42b02722 Cell@d62fe5b Cell@49964d75 Cell@528c868 Cell@466276d8 Cell@5ce8d869 Cell@27eedb64 Cell@64c63c79 Cell@31c7528f 
+Cell@2b76ff4e Cell@7a1234bf Cell@2f62ea70 Cell@24ba9639 Cell@38aa816f Cell@53f6fd09 Cell@6bffbc6d Cell@1b84f475 Cell@7749bf93 Cell@13330ac6 
+Cell@539d019 Cell@39a2bb97 Cell@3ad2e17 Cell@8c3619e Cell@4331d187 Cell@6f63b475 Cell@554e218 Cell@1608bcbd Cell@5bf8fa12 Cell@29ca3d04 
+Cell@b2c5e07 Cell@5812f68b Cell@4426bff1 Cell@3c7c886c Cell@55493582 Cell@1a20270e Cell@6b88ca8c Cell@336f1079 Cell@2f16c6b3 Cell@34158c08 
+Cell@19e4fcac Cell@52c3cb31 Cell@4b79ac84 Cell@53941c2f Cell@6dab9b6d Cell@21fd5faa Cell@2766ca9d Cell@5460cf3a Cell@65a15628 Cell@2e6a5539 
+Cell@3fc9504b Cell@6d025197 Cell@27d4a09 Cell@7e4204e2 Cell@b7c4869 Cell@740d2e78 Cell@1c481ff2 Cell@72437d8d Cell@1b955cac Cell@676cf48 
+Cell@5a1de7fb Cell@335b5620 Cell@29a0cdb Cell@32a68f4f Cell@73194df Cell@6eb2384f Cell@3c9c0d96 Cell@3a4621bd Cell@31dadd46 Cell@4ed5eb72 
+Cell@12f9af83 Cell@19b93fa8 Cell@7e6ef134 Cell@1f010bf0 Cell@40db2a24 Cell@10cf09e8 Cell@1921ad94 Cell@ee86bcb Cell@177bea38 Cell@7f132176 
+Cell@6bca7e0d Cell@2631f68c Cell@6ed3f258 Cell@8ad6665 Cell@30af5b6b Cell@19835e64 Cell@68b32e3e Cell@bcef303 Cell@41709512 Cell@42039326 
+Cell@33308786 Cell@4f9a2c08 Cell@a87f8ec Cell@5443d039 Cell@63787180 Cell@7d1cfb8b Cell@48e92c5c Cell@2e1ef60 Cell@22356acd Cell@386f0da3 
+]]></system-out>
+  </testcase>
 </testsuite>
